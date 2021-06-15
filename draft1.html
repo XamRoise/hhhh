@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/80a9691e2b.js" crossorigin="anonymous"></script>
+
+    <!--icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Document</title>
+    <style>
+        body html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .background {
+            height: 100vh;
+            width: 100%;
+            background-image: url(img/1.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+
+            animation-name: animate;
+            animation-direction: alternate-reverse;
+            animation-duration: 30s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes animate {
+            0% {
+                background-image: url(img/2.jpg);
+            }
+
+            25% {
+                background-image: url(img/3.jpg);
+            }
+
+            50% {
+                background-image: url(img/4.jpg);
+            }
+
+            75% {
+                background-image: url(img/5.jpg);
+            }
+
+            100% {
+                background-image: url(img/6.jpg);
+            }
+        }
+
+        /* Responsive Logo */
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Forms */
+        form {
+            padding: 30px;
+            margin: 0;
+            background: white;
+            border: 10px solid tan;
+            border-radius: 50px;
+            opacity: 75%;
+        }
+
+        button {
+            width: 100%;
+            min-width: 50px; // add this if you want
+            max-width: 300px; // add this if  you want, adjust accordingly
+        }
+    </style>
+
+</head>
+
+<body class="background">
+
+    <div class="container">
+        <!--offset grid-->
+        <div class="row">
+            <div class="col s6 offset-s3">
+                <div class="box">
+                    <!-- LogIn Form-->
+                    <form href="home.html" method="post">
+                        <div class="imgcontainer">
+                            <img src="img/Picture1.png" alt="Banner" class="responsive" height="250" width="775">
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="black-text" style="font-size: 100%;"> <strong>Username</strong>
+                            </label>
+                            <input type="text" class="form-control" placeholder="Enter Username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd" class="black-text" style="font-size: 100%;"> <strong>Password</strong>
+                            </label>
+                            <input type="password" class="form-control" placeholder="Enter Password" required>
+                        </div>
+
+                        <div class="form-check">
+                            <label class="form-check-label" for="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1"
+                                    style="font-size: 100%;">
+                                <span class="black-text">Remember</span>
+                            </label>
+                        </div>
+
+
+                        <button type="submit" class="waves-effect waves-light btn btn-primsary red resonsive"
+                            style="width: 100px;">Log
+                            In</button>
+
+                        <p class="center-align">Are you a student that cannot log in? Please, contact your teacher for
+                            your log in credential.</p>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JQUERY CODE-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>
